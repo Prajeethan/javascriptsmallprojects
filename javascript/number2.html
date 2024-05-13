@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function findGreatest() {
+        const num1 = document.getElementById("numberInput1").value;
+        const num2 = document.getElementById("numberInput2").value;
+
+        if (!isNaN(num1) && !isNaN(num2)) {
+          
+          if (num1 > num2) {
+            document.getElementById("result").textContent =
+              "The greatest number is: " + num1;
+          } else if (num2 > num1) {
+            document.getElementById("result").textContent =
+              "The greatest number is: " + num2;
+          } else {
+            document.getElementById("result").textContent =
+              "Both numbers are equal.";
+          }
+        } else {
+          document.getElementById("result").textContent =
+            "Please enter valid numbers.";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>find the greatest number</h1>
+    <input id="numberInput1" type="text" placeholder="enter an number " />
+    <input
+      id="numberInput2"
+      type="text"
+      placeholder="enter an another number"
+    />
+    <button onclick="findGreatest()">check sum</button>
+
+    <p id="result"></p>
+  </body>
+</html>

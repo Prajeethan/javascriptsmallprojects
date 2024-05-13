@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+function typeNum(){
+  const x =  document.getElementById("num").value;
+
+  if(!isNaN(x)){
+    if(x==1){
+      document.getElementById("result").textContent="You entered the number One:"+x;
+    }else if(x==2){
+      document.getElementById("result").textContent="You entered the number Two:"+x;
+    }else if (x==3){
+      document.getElementById("result").textContent="You entered the number Three:"+x;
+    }else if (x==4){
+      document.getElementById("result").textContent="You entered the number Four:"+x;
+    }
+    else if (x==5){
+      document.getElementById("result").textContent="You entered the number Five:"+x;
+    }else if (x==6){
+      document.getElementById("result").textContent="You entered the number Six:"+x;
+    }else if (x==7){
+      document.getElementById("result").textContent="You entered the number Seven:"+x;
+    }else if (x==8){
+      document.getElementById("result").textContent="You entered the number Eight:"+x;
+    }else if (x==9){
+      document.getElementById("result").textContent="You entered the number Nine:"+x;
+    }else if (x==10){
+      document.getElementById("result").textContent="You entered the number Ten:"+x;
+    }else if(x>10){
+      document.getElementById("result").textContent="Please enter a valid number between 1 to 10.";
+    }
+  } else{
+      document.getElementById("result").textContent="Please enter a valid number .";
+    }
+}
+
+
+
+  </script>
+  <h1>print the number in text between 1 to 10</h1>
+  <input style="width: 300px;" id="num" type="text" placeholder="enter a number between 1 to 10">
+  <button onclick="typeNum()">click</button>
+  <p id="result"></p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function sudo() {
+        const number = document.getElementById("numberInput").value;
+
+        if (number > 0) {
+            document.getElementById("result").textContent = "positive Number.";
+        } else if (number < 0) {
+            document.getElementById("result").textContent = "negative Number.";
+        }else if(number==0){
+          document.getElementById("result").textContent ="Zero is neither positive nor negative. It is a neutral number.";
+        } else {
+            document.getElementById("result").textContent ="Enter a valid number.";
+        } 
+      }
+    </script>
+  </head>
+  <body>
+    <h1>finding the given number whether positive or negative</h1>
+    <input id="numberInput" type="text" placeholder="enter a number" />
+    <button onclick="sudo()">check number</button>
+   
+    <p id="result"></p>
+  </body>
+</html>
