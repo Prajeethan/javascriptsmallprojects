@@ -6,9 +6,9 @@
   <title>Document</title>
   <script>
     function findSmallest() {
-      const num1 = parseFloat(document.getElementById("numberInput1").value);
-      const num2 = parseFloat(document.getElementById("numberInput2").value);
-      const num3 = parseFloat(document.getElementById("numberInput3").value);
+      const num1 = document.getElementById("numberInput1").value;
+      const num2 = document.getElementById("numberInput2").value;
+      const num3 = document.getElementById("numberInput3").value;
 
       if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
         if (num1 <= num2 && num1 <= num3) {
